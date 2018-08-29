@@ -13,3 +13,5 @@
 
 
 Route::get('/', 'HomeController@index');
+Route::get('/framing', 'FramingController@index');
+
