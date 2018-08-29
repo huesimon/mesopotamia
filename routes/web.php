@@ -11,10 +11,8 @@
 |
 */
 
-
-Route::get('/framing', 'FramingController@index');
-
-
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/framing', 'FramingController@index');
+
