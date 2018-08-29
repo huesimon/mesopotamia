@@ -12,6 +12,9 @@
 */
 
 
-Route::get('/', 'HomeController@index');
 Route::get('/framing', 'FramingController@index');
 
+
+Auth::routes();
+
+Route::get('/', 'HomeController@index')->name('home');
